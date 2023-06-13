@@ -23,7 +23,7 @@ mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const userSchema = new mongoose.Schema({
   username: String,
-  password: String
+  password: String,
 });
 
 const User = mongoose.model('User', userSchema);
@@ -50,25 +50,5 @@ app.post('/login', async (req, res) => {
       res.status(500).json({ error: 'Server error' });
     }
   });
-
-app.get('/stock', (req, res) => {
-    request.get({
-        url: url,
-        json: true,
-        headers: {'User-Agent': 'request'}
-      }, (err, res, data) => {
-        if (err) {
-          console.log('Error:', err);
-        } else if (res.statusCode !== 200) {
-          console.log('Status:', res.statusCode);
-        } else {
-          // data is successfully parsed as a JSON object:
-          console.log(data);
-        }
-    });
-});
-
-
-  
 
 app.listen(8000, () => console.log('Server started on port 8000'));

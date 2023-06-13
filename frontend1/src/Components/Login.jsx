@@ -37,16 +37,16 @@ const Login = () => {
 
 
     return (
-        <div className="login bg-blue-700">
+        <div className="login bg-gray-900">
         <div className="flex items-center justify-center min-h-screen">
-        <div className="items-center justify-center bg-white p-9 rounded-3xl">
+        <div className="items-center justify-center bg-gray-700 p-9 rounded-3xl">
         <div className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-700">Login</h1>
+        <h1 className="text-4xl font-bold text-green-300">Login</h1>
         <div className="flex flex-col space-y-4 mt-8">
-        <input type="text" placeholder="Username" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" value={username} onChange={handleChange} />
-        <input type="password" placeholder="Password" className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" value={password} onChange={handleChange}/>
-        <button className="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" onClick={handleLogin}>Login</button>
-        <p>New User? <a href="/register" className="text-blue-600">Register</a></p>
+        <input type="text" placeholder="Username" className="px-4 py-2 border-white outline-gray-800 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value={username} onChange={handleChange} />
+        <input type="password" placeholder="Password" className="px-4 py-2 border-white outline-gray-800 bg-whitte rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" value={password} onChange={handleChange}/>
+        <button className="px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" onClick={handleLogin}>Login</button>
+        <p className='text-white'>New User? <a href="/register" className="text-blue-600">Register</a></p>
         </div>
         </div>
         </div>
