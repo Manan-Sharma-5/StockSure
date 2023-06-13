@@ -1,13 +1,16 @@
+// Dashboard.js
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import StockData from './StockData';
 import DetailedView from './DetailedView';
+import TradingViewWidget from './TradingView';
 
 const Dashboard = () => {
   const [stock, setStock] = useState('');
   const [stockData, setStockData] = useState(null);
-  const[expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleChange = (e) => {
     setStock(e.target.value);
@@ -15,8 +18,7 @@ const Dashboard = () => {
 
   const handleClick = () => {
     setExpanded(true);
-  }
-
+  };
 
   const handleSearch = () => {
     const apiUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${stock}&interval=5min&apikey=Y3ZA09ASPV1S85IA`;
@@ -67,20 +69,30 @@ const Dashboard = () => {
         />
       )}
 
-      {
-        stockData && (
-          <div className="flex items-center justify-center mt-4">
-          <button className='p-4 bg-green-300 rounded-xl font-bold' onClick={handleClick}>Detailed View</button>
-          </div>
-        )
-      }
-
-      {
-        expanded && (
-          <DetailedView />
-        )
-      }
-    </div>
+      {stockData && (
+        <div className="flex items-center justify-center mt-4">
+          <button className="p-4 bg-green-300 rounded-xl font-bold" onClick={handleClick}>
+            Detailed View
+          </button>
+        </div>
+      )}
+        <div className="flex items-center justify-around mt-16 min-h-screen">
+        <div className="">
+      {expanded && <TradingViewWidget stock={stock} />}
+      </div>
+      <div className="">
+        <form>
+        <input type="text" placeholder='Enter Quantity' 
+        className='border-none outline-gray-800 bg-white w-5/6 p-3 rounded-xl text-gray-900 focus:ring-2 focus:outline-none focus:ring-green-300'
+         />
+        <div className="flex gap-2 mt-3">
+        <button className="bg-green-300 text-black font-bold p-2 w-2/5 rounded-xl">Buy</button>
+        <button className="bg-green-300 text-black font-bold p-2 w-2/5 rounded-xl">Sell</button>
+        </div>
+        </form>
+      </div>
+      </div>
+    // </div>
   );
 };
 
