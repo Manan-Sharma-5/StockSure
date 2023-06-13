@@ -80,6 +80,7 @@ const Dashboard = () => {
         <div className="">
       {expanded && <TradingViewWidget stock={stock} />}
       </div>
+      {expanded && (
       <div className="">
         <form>
         <input type="text" placeholder='Enter Quantity' 
@@ -91,6 +92,7 @@ const Dashboard = () => {
         </div>
         </form>
       </div>
+      )}
       </div>
     // </div>
   );
