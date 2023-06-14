@@ -33,8 +33,8 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 app.post('/register', async (req, res) => {
-  const { username, password } = req.body;
-  const user = new User({ username, password });
+  const { username, password, balance } = req.body;
+  const user = new User({ username, password, balance });
   const createdUser = await user.save();
   res.status(201).json(createdUser); // Sending the created user as the response
 });

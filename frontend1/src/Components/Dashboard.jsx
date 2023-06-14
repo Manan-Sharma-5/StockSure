@@ -12,6 +12,7 @@ import { useContext } from 'react';
 const Dashboard = () => {
   const [stock, setStock] = useState('');
   const [price, setPrice] = useState('');
+  const [profit, setProfit] = useState('');
   const [stockData, setStockData] = useState(null);
   const [expanded, setExpanded] = useState(false);
   const [credentials, setCredentials] = useContext(CredentialsContext);
@@ -22,6 +23,10 @@ const Dashboard = () => {
 
   const handleChange = (e) => {
     setStock(e.target.value);
+  };
+
+  const handleProfit = (e) => {
+    setProfit(e.target.value);
   };
 
   const handlePrice = (e) => {
@@ -157,6 +162,12 @@ const Dashboard = () => {
                   <button onClick={handleBuy} className="bg-green-300 text-black font-bold p-2 w-2/5 rounded-xl">Buy</button>
                   <button onClick={handleSell} className="bg-green-300 text-black font-bold p-2 w-2/5 rounded-xl">Sell</button>
                 </div>
+                <input type="text" onChange={handleProfit} placeholder='Expected Selling Price' className="border-none outline-gray-800 bg-white w-576 p-3 rounded-xl text-gray-900 focus:ring-2 focus:outline-none focus:ring-green-300 mt-4"/>
+                <p className="text-white mt-2">
+                Expected Profit/Loss: { profit - (price * stockData.closePrice)}
+                <br />
+                {(profit - (price * stockData.closePrice) > 0) ? 'Our Fees: ' + (0.2*(profit - (price * stockData.closePrice))) : 'Your Insurance: '+((0.3 * (profit - (price * stockData.closePrice))))}
+              </p>
               </form>
             </div>
           )}
