@@ -28,7 +28,7 @@ Glimpse of our website!
 
 
 
-Learn Page
+## Learn Page
 
 
 <img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/237f521d-3cd4-434f-ab11-87f07b2fb369">
@@ -36,7 +36,7 @@ Learn Page
 
 
 
-Login/Register
+## Login/Register
 
 
 
@@ -45,7 +45,7 @@ Login/Register
 
 
 
-Dashboard
+## Dashboard
 
 ![WhatsApp Image 2023-06-14 at 12 59 07 PM (1)](https://github.com/Manan-Sharma-5/StockSure/assets/125828299/529c5579-387e-45e1-9128-56b17495a77a)
 ![WhatsApp Image 2023-06-14 at 12 59 07 PM](https://github.com/Manan-Sharma-5/StockSure/assets/125828299/0a46bdfb-4e63-45af-a38b-d7201941f524)
