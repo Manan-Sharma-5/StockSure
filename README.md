@@ -1,6 +1,7 @@
 # StockSure
 
-Welcome to StockSure, where protection meets growth. StockSure is a unique investment platform that prioritizes safeguarding your investments while offering opportunities for growth. With our distinctive insurance factor, we provide 30% loss coverage, ensuring that you're protected from potential losses. Furthermore, our 20% profit-sharing model guarantees that we only benefit when you make profits.
+StockSure, Where protection meets growth. With our unique insurance factor, we safeguard investors from potential losses by offering 30% loss coverage. Our 20% profit-sharing model ensures that we only benefit when our users make profits. We're not just an investment platform; we're committed to empowering individuals through financial education. Our user-friendly platform provides educational resources, tutorials, and expert insights to enhance financial literacy. We demystify complex concepts, making finance accessible to all. Equipped with knowledge and skills, our users can confidently navigate the world of finance and achieve their financial goals. Invest with confidence and learn with StockSure,Where education meets prosperity.
+
 
 ## Key Features
 
@@ -15,11 +16,40 @@ Welcome to StockSure, where protection meets growth. StockSure is a unique inves
 StockSure is built using the MERN (MongoDB, Express, React, Node.js) stack. This powerful combination of technologies allows for a seamless and robust user experience. The frontend is developed using React, while the server is built using Node.js. The data is stored in MongoDB, ensuring efficient and reliable data management.
 
 ## Screenshots
-<img width="1403" alt="Screenshot 2023-06-14 at 10 50 48 AM" src="https://github.com/Manan-Sharma-5/StockSure/assets/112090668/6ff2eaf0-79d9-4235-a281-4a9622c4531e">
-<img width="1450" alt="Screenshot 2023-06-14 at 10 50 34 AM" src="https://github.com/Manan-Sharma-5/StockSure/assets/112090668/dbf7b8b8-8f83-4939-a7a1-aa063de321cc">
-<img width="1449" alt="Screenshot 2023-06-14 at 10 50 21 AM" src="https://github.com/Manan-Sharma-5/StockSure/assets/112090668/913fc04b-ca4f-4276-ae9b-8607a3a85bc2">
-<img width="1063" alt="Screenshot 2023-06-14 at 10 50 07 AM" src="https://github.com/Manan-Sharma-5/StockSure/assets/112090668/139f1e46-8576-4236-867c-f0f6a425d0c1">
-<img width="1333" alt="Screenshot 2023-06-14 at 10 48 44 AM" src="https://github.com/Manan-Sharma-5/StockSure/assets/112090668/7e57e1b6-873d-44b7-9842-7c4bd5ed6bdb">
+Glimpse of our website!
+
+
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/48998c44-39ef-4bf3-905c-399753f45751">
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/f7ee8b19-60ca-4d34-a3d5-95fd2b3c41c9">
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/89123677-9ef8-4d7f-a8dc-1a79798da8a6">
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/eac0f9a9-690a-4ca5-a0cd-f2eaa10ebbd0">
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/59be5f87-d4eb-4d71-84bc-a00dfa216752">
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/eef738a8-649f-4746-a302-3318220acc07">
+
+
+
+Learn Page
+
+
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/237f521d-3cd4-434f-ab11-87f07b2fb369">
+<img width="1425" alt="image" src="https://github.com/Manan-Sharma-5/StockSure/assets/125828299/3159d10d-011d-45d4-8736-b2938d586724">
+
+
+
+Login/Register
+
+
+
+![WhatsApp Image 2023-06-14 at 12 59 07 PM (2)](https://github.com/Manan-Sharma-5/StockSure/assets/125828299/eddafc03-142c-483c-883b-c2758d3e5b7b)
+
+
+
+
+Dashboard
+
+![WhatsApp Image 2023-06-14 at 12 59 07 PM (1)](https://github.com/Manan-Sharma-5/StockSure/assets/125828299/529c5579-387e-45e1-9128-56b17495a77a)
+![WhatsApp Image 2023-06-14 at 12 59 07 PM](https://github.com/Manan-Sharma-5/StockSure/assets/125828299/0a46bdfb-4e63-45af-a38b-d7201941f524)
+
 
 
 ## Installation
